@@ -13,9 +13,9 @@
 		8D255ACC0486D3F9007BF209 /* FoolSaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = F500797A0118B23001CA0E54 /* FoolSaverView.m */; };
 		8D255ACE0486D3F9007BF209 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 		8D255ACF0486D3F9007BF209 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F27B2DFFEEEFEF11CA0E56 /* ScreenSaver.framework */; };
+		A51A7F0519A3D221008D8054 /* Prefs.xib in Resources */ = {isa = PBXBuildFile; fileRef = A51A7F0319A3D221008D8054 /* Prefs.xib */; };
 		A5799C7108B2A67F002BCEF5 /* PrefsController.h in Headers */ = {isa = PBXBuildFile; fileRef = A5799C6F08B2A67F002BCEF5 /* PrefsController.h */; };
 		A5799C7208B2A67F002BCEF5 /* PrefsController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5799C7008B2A67F002BCEF5 /* PrefsController.m */; };
-		A5799C9908B2A83C002BCEF5 /* Prefs.nib in Resources */ = {isa = PBXBuildFile; fileRef = A5799C9708B2A83C002BCEF5 /* Prefs.nib */; };
 		A5DFE8870A55725700C3B713 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = A5DFE8820A55725700C3B713 /* 2.png */; };
 		A5DFE8880A55725700C3B713 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = A5DFE8830A55725700C3B713 /* 3.png */; };
 		A5DFE8890A55725700C3B713 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = A5DFE8840A55725700C3B713 /* 0.png */; };
@@ -32,9 +32,9 @@
 		32DBCFA80370C50100C91783 /* FoolSaver_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoolSaver_Prefix.pch; sourceTree = "<group>"; };
 		8D255AD20486D3F9007BF209 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D255AD30486D3F9007BF209 /* FoolSaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoolSaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51A7F0419A3D221008D8054 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Prefs.xib; sourceTree = "<group>"; };
 		A5799C6F08B2A67F002BCEF5 /* PrefsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefsController.h; sourceTree = "<group>"; };
 		A5799C7008B2A67F002BCEF5 /* PrefsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefsController.m; sourceTree = "<group>"; };
-		A5799C9808B2A83C002BCEF5 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Prefs.nib; sourceTree = "<group>"; };
 		A5DFE8820A55725700C3B713 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		A5DFE8830A55725700C3B713 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		A5DFE8840A55725700C3B713 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 		089C167CFE841241C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A5799C9708B2A83C002BCEF5 /* Prefs.nib */,
+				A51A7F0319A3D221008D8054 /* Prefs.xib */,
 				A5DFE8700A55719000C3B713 /* Images */,
 				8D255AD20486D3F9007BF209 /* Info.plist */,
 				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
@@ -196,6 +196,7 @@
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				en,
+				English,
 			);
 			mainGroup = 089C166AFE841209C02AAC07 /* FoolSaver */;
 			projectDirPath = "";
@@ -212,7 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D255ACA0486D3F9007BF209 /* InfoPlist.strings in Resources */,
-				A5799C9908B2A83C002BCEF5 /* Prefs.nib in Resources */,
+				A51A7F0519A3D221008D8054 /* Prefs.xib in Resources */,
 				A5DFE8870A55725700C3B713 /* 2.png in Resources */,
 				A5DFE8880A55725700C3B713 /* 3.png in Resources */,
 				A5DFE8890A55725700C3B713 /* 0.png in Resources */,
@@ -254,12 +255,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		A5799C9708B2A83C002BCEF5 /* Prefs.nib */ = {
+		A51A7F0319A3D221008D8054 /* Prefs.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A5799C9808B2A83C002BCEF5 /* English */,
+				A51A7F0419A3D221008D8054 /* English */,
 			);
-			name = Prefs.nib;
+			name = Prefs.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
