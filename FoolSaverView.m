@@ -31,12 +31,7 @@
 
 - (void)dealloc
 {
-	[winXPPro release];
-	[prefs release];
-	
 	[[NSNotificationCenter defaultCenter] removeObserver:self];
-	
-	[super dealloc];
 }
 
 - (void)updateImage:(NSNotification *)notification
@@ -59,7 +54,6 @@
 		windowsImage = [obj intValue];
 	}
 	
-	[winXPPro release];
 	winXPPro = [[NSImage alloc] initWithContentsOfFile:[[NSBundle bundleForClass:[self class]] pathForResource:[NSString stringWithFormat:@"%d",windowsImage] ofType:@"png"]];
 	
 	[self setNeedsDisplay:YES];
