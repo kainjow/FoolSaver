@@ -3,7 +3,7 @@
 //  FoolSaver
 //
 //  Created by Kevin Wojniak on 8/16/05.
-//  Copyright (c) 2005, __MyCompanyName__. All rights reserved.
+//  Copyright 2005, 2014 Kevin Wojniak. All rights reserved.
 //
 
 #import "FoolSaverView.h"
